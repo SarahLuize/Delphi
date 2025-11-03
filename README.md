@@ -25,6 +25,7 @@ Form é composto pelo arquivo `.DFM` (ou `.LFM` dependendo da IDE) + arquivo `.P
 | .res | Recursos do projeto (ícones, imagens) | .res |
 | .ico | Ícone do projeto | .ico |
 
+ALT + SHIFT + F11 = Atalho opções do projeto
 ---
 
  ## Última vez editado: 03/11/2025 xx:xx
