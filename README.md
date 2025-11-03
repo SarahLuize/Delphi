@@ -27,6 +27,9 @@ Form é composto pelo arquivo `.DFM` (ou `.LFM` dependendo da IDE) + arquivo `.P
 
 ALT + SHIFT + F11 = Atalho opções do projeto
 F12 = Alternar entre código e tela visual
+
+---
+Parei em 18:39 do vídeo https://www.youtube.com/watch?v=kTtKkEjlnNk&list=PLcz5abtuMBtP22AW3gllUu89fzGlPkL2W&index=3
 ---
 
- ## Última vez editado: 03/11/2025 xx:xx
+ ## Última vez editado: 03/11/2025 20:51
