@@ -47,6 +47,13 @@ end;
 
 procedure TForm1.pnDisplayClick(Sender: TObject);
 begin
+  Panel4.BorderSpacing.Left := 0;
+  ShowMessage(
+  'Top: ' + IntToStr(Panel4.BorderSpacing.Top) + sLineBreak +
+  'Bottom: ' + IntToStr(Panel4.BorderSpacing.Bottom) + sLineBreak +
+  'Left: ' + IntToStr(Panel4.BorderSpacing.Left) + sLineBreak +
+  'Right: ' + IntToStr(Panel4.BorderSpacing.Right)
+);
 
 end;
 

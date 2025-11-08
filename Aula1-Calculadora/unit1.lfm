@@ -2,16 +2,16 @@ object Form1: TForm1
   Left = 532
   Height = 385
   Top = 191
-  Width = 360
+  Width = 357
   Caption = 'Form1'
   ClientHeight = 385
-  ClientWidth = 360
+  ClientWidth = 357
   OnCreate = FormCreate
   object pnFundo: TPanel
     Left = 0
     Height = 327
     Top = 58
-    Width = 360
+    Width = 357
     Align = alClient
     AutoSize = True
     BevelColor = 12287488
@@ -24,18 +24,17 @@ object Form1: TForm1
     ParentBackground = False
     ParentColor = False
     TabOrder = 0
-    OnClick = Panel1Click
   end
   object pnDisplay: TPanel
     Left = 0
     Height = 58
     Top = 0
-    Width = 360
+    Width = 357
     Align = alTop
     BevelColor = 12287488
     BevelInner = bvRaised
     BevelOuter = bvSpace
-    Color = 15987699
+    Color = 16579836
     ParentBackground = False
     ParentColor = False
     TabOrder = 1
@@ -45,14 +44,14 @@ object Form1: TForm1
     Left = 0
     Height = 327
     Top = 58
-    Width = 360
+    Width = 357
     Align = alClient
     BevelColor = 12287488
     BevelInner = bvRaised
     BevelOuter = bvSpace
     ClientHeight = 327
-    ClientWidth = 360
-    Color = 15987699
+    ClientWidth = 357
+    Color = 16579836
     ParentBackground = False
     ParentColor = False
     TabOrder = 2
@@ -64,20 +63,20 @@ object Form1: TForm1
       Width = 222
       Align = alLeft
       BevelOuter = bvNone
-      Color = 16579836
+      Color = 14671839
       ParentBackground = False
       ParentColor = False
       TabOrder = 0
       OnClick = Panel3Click
     end
     object Panel4: TPanel
-      Left = 232
+      Left = 229
       Height = 323
       Top = 2
       Width = 126
       Align = alRight
       BevelOuter = bvNone
-      Color = 16579836
+      Color = 14671839
       ParentBackground = False
       ParentColor = False
       TabOrder = 1
