@@ -1,6 +1,7 @@
 # Aprendendo DELPHI
 
 Exercícios do curso de Prof. André Nobre no Youtube.
+[Link](https://www.youtube.com/watch?v=kTtKkEjlnNk&list=PLcz5abtuMBtP22AW3gllUu89fzGlPkL2W&index=3)
 
 Usando a IDE Lazarus.
 
