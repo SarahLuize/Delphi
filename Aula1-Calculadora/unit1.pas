@@ -13,6 +13,12 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
+    btnLimpar: TButton;
+    btnMultiplicacao: TButton;
+    btnSoma: TButton;
+    btnIgual: TButton;
+    btnSubtracao: TButton;
+    btnDivisao: TButton;
     btn7: TButton;
     btn4: TButton;
     btn5: TButton;
@@ -32,9 +38,10 @@ type
     pnDisplay: TPanel;
     pnFundoBotoesNumericos: TPanel;
     pnFundoBotoes: TPanel;
-    pnLinha2: TPanel;
-    pnLinha3: TPanel;
     pnLinha4: TPanel;
+    pnLinha3: TPanel;
+    pnLinha2: TPanel;
+    procedure btnMultiplicacaoClick(Sender: TObject);
     procedure Button10Click(Sender: TObject);
     procedure Button11Click(Sender: TObject);
     procedure Button12Click(Sender: TObject);
@@ -68,6 +75,11 @@ implementation
 { TForm1 }
 
 procedure TForm1.Button10Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.btnMultiplicacaoClick(Sender: TObject);
 begin
 
 end;
