@@ -5,7 +5,8 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
+  Buttons;
 
 type
 
@@ -19,10 +20,13 @@ type
     btn8: TButton;
     btn9: TButton;
     btn0: TButton;
-    Button1: TButton;
-    Button2: TButton;
-    Button3: TButton;
+    btn1: TButton;
+    btn2: TButton;
+    btn3: TButton;
     Panel4: TPanel;
+    pnFundo1: TPanel;
+    pnFundoBotoes1: TPanel;
+    pnFundoBotoesNumericos1: TPanel;
     pnLinha1: TPanel;
     pnFundo: TPanel;
     pnDisplay: TPanel;
@@ -34,8 +38,8 @@ type
     procedure Button10Click(Sender: TObject);
     procedure Button11Click(Sender: TObject);
     procedure Button12Click(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
+    procedure btn1Click(Sender: TObject);
+    procedure btn2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
@@ -47,6 +51,7 @@ type
     procedure pnDisplayClick(Sender: TObject);
     procedure pnFundoClick(Sender: TObject);
     procedure pnLinha1Click(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
   private
 
   public
@@ -61,6 +66,66 @@ implementation
 {$R *.lfm}
 
 { TForm1 }
+
+procedure TForm1.Button10Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.Button11Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.Button12Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.btn1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.btn2Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.Button7Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.Button8Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.Button9Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.onClickButton2(Sender: TObject);
+begin
+
+end;
 
 procedure TForm1.Panel4Click(Sender: TObject);
 begin
@@ -78,6 +143,11 @@ begin
 end;
 
 procedure TForm1.pnLinha1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.SpeedButton1Click(Sender: TObject);
 begin
 
 end;
