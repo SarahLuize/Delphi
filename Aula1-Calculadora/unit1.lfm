@@ -42,7 +42,7 @@ object Form1: TForm1
     ParentColor = False
     TabOrder = 1
     OnClick = pnDisplayClick
-    object Digite: TEdit
+    object edtDigite: TEdit
       Left = 12
       Height = 50
       Top = 12
@@ -61,8 +61,9 @@ object Form1: TForm1
       Font.Quality = fqDraft
       ParentFont = False
       TabOrder = 0
-      Text = 'Digite'
-      OnChange = DigiteChange
+      Text = 'edtDigite'
+      OnChange = edtDigiteChange
+      OnKeyPress = edtDigiteKeyPress
     end
     object btnLimpar: TButton
       Left = 320
@@ -150,6 +151,7 @@ object Form1: TForm1
           BorderSpacing.Top = 2
           BorderSpacing.Right = 2
           BorderSpacing.Bottom = 2
+          Caption = '7'
           Color = 15198183
           Font.CharSet = ANSI_CHARSET
           Font.Height = -20

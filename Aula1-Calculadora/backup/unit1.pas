@@ -29,7 +29,7 @@ type
     btn7: TButton;
     btn8: TButton;
     btn9: TButton;
-    Digite: TEdit;
+    edtDigite: TEdit;
     Panel4: TPanel;
     pnFundo1: TPanel;
     pnFundoBotoes1: TPanel;
@@ -54,12 +54,12 @@ type
     procedure btn9Click(Sender: TObject);
     procedure btnDivisaoClick(Sender: TObject);
     procedure btnIgualClick(Sender: TObject);
-    procedure btnLimpar1Click(Sender: TObject);
     procedure btnLimparClick(Sender: TObject);
     procedure btnMultiplicacaoClick(Sender: TObject);
     procedure btnSomaClick(Sender: TObject);
     procedure btnSubtracaoClick(Sender: TObject);
-    procedure DigiteChange(Sender: TObject);
+    procedure edtDigiteChange(Sender: TObject);
+    procedure edtDigiteKeyPress(Sender: TObject; var Key: char);
     procedure FormCreate(Sender: TObject);
     procedure Panel4Click(Sender: TObject);
     procedure pnDisplayClick(Sender: TObject);
@@ -81,8 +81,9 @@ implementation
 
 { TForm1 }
 
-procedure TForm1.Button10Click(Sender: TObject);
+procedure TForm1.FormCreate(Sender: TObject);
 begin
+  edtDigite.Text := '0';
 
 end;
 
@@ -161,12 +162,18 @@ begin
 
 end;
 
-procedure TForm1.DigiteChange(Sender: TObject);
+procedure TForm1.edtDigiteChange(Sender: TObject);
 begin
 
 end;
 
-procedure TForm1.FormCreate(Sender: TObject);
+procedure TForm1.edtDigiteKeyPress(Sender: TObject; var Key: char);
+begin
+     if not (Key in ['0'..'9', #8]) then //permite apenas números e a tecla 'ENTER'
+     Key := #0;      //cancela tecla
+end;
+
+procedure TForm1.btnLimparClick(Sender: TObject);
 begin
 
 end;
