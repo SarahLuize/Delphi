@@ -13,7 +13,7 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
-    btnLimpar: TButton;
+    btnLimpar1: TButton;
     btnMultiplicacao: TButton;
     btnSoma: TButton;
     btnIgual: TButton;

@@ -1,16 +1,16 @@
 object Form1: TForm1
   Left = 532
-  Height = 369
+  Height = 383
   Top = 191
   Width = 396
   Caption = 'Form1'
-  ClientHeight = 369
+  ClientHeight = 383
   ClientWidth = 396
   OnCreate = FormCreate
   object pnFundo: TPanel
     Left = 0
-    Height = 311
-    Top = 58
+    Height = 309
+    Top = 74
     Width = 396
     Align = alClient
     AutoSize = True
@@ -28,29 +28,50 @@ object Form1: TForm1
   end
   object pnDisplay: TPanel
     Left = 0
-    Height = 58
+    Height = 74
     Top = 0
     Width = 396
     Align = alTop
     BevelColor = 12287488
     BevelInner = bvRaised
     BevelOuter = bvSpace
+    ClientHeight = 74
+    ClientWidth = 396
     Color = 16579836
     ParentBackground = False
     ParentColor = False
     TabOrder = 1
     OnClick = pnDisplayClick
+    object btnLimpar1: TButton
+      Left = 320
+      Height = 70
+      Top = 2
+      Width = 72
+      Align = alRight
+      BorderSpacing.Left = 2
+      BorderSpacing.Right = 2
+      Caption = 'C'
+      Color = 10329501
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -20
+      Font.Name = 'Verdana'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 0
+      OnClick = btnMultiplicacaoClick
+    end
   end
   object pnFundoBotoes: TPanel
     Left = 0
-    Height = 311
-    Top = 58
+    Height = 309
+    Top = 74
     Width = 396
     Align = alClient
     BevelColor = 12287488
     BevelInner = bvRaised
     BevelOuter = bvSpace
-    ClientHeight = 311
+    ClientHeight = 309
     ClientWidth = 396
     Color = 16579836
     ParentBackground = False
@@ -63,12 +84,12 @@ object Form1: TForm1
       AnchorSideBottom.Control = pnFundoBotoes
       AnchorSideBottom.Side = asrBottom
       Left = 2
-      Height = 307
+      Height = 305
       Top = 2
       Width = 249
       Anchors = [akTop, akLeft, akBottom]
       BevelOuter = bvNone
-      ClientHeight = 307
+      ClientHeight = 305
       ClientWidth = 249
       Color = 14671839
       ParentBackground = False
@@ -161,7 +182,7 @@ object Form1: TForm1
       object pnLinha2: TPanel
         Left = 0
         Height = 68
-        Top = 136
+        Top = 68
         Width = 249
         Align = alTop
         BevelColor = 14671839
@@ -244,7 +265,7 @@ object Form1: TForm1
       object pnLinha3: TPanel
         Left = 0
         Height = 68
-        Top = 68
+        Top = 136
         Width = 249
         Align = alTop
         BevelColor = 14671839
@@ -373,12 +394,12 @@ object Form1: TForm1
     end
     object Panel4: TPanel
       Left = 258
-      Height = 307
+      Height = 305
       Top = 2
       Width = 136
       Align = alRight
       BevelOuter = bvNone
-      ClientHeight = 307
+      ClientHeight = 305
       ClientWidth = 136
       Color = 14671839
       ParentBackground = False
@@ -387,7 +408,7 @@ object Form1: TForm1
       OnClick = Panel4Click
       object pnFundo1: TPanel
         Left = 0
-        Height = 307
+        Height = 305
         Top = 0
         Width = 136
         Align = alClient
@@ -406,14 +427,14 @@ object Form1: TForm1
       end
       object pnFundoBotoes1: TPanel
         Left = 0
-        Height = 307
+        Height = 305
         Top = 0
         Width = 136
         Align = alClient
         BevelColor = 12287488
         BevelInner = bvRaised
         BevelOuter = bvSpace
-        ClientHeight = 307
+        ClientHeight = 305
         ClientWidth = 136
         Color = 16579836
         ParentBackground = False
@@ -426,7 +447,7 @@ object Form1: TForm1
           AnchorSideBottom.Control = pnFundoBotoes1
           AnchorSideBottom.Side = asrBottom
           Left = 2
-          Height = 303
+          Height = 301
           Top = 2
           Width = 249
           Anchors = [akTop, akLeft, akBottom]
@@ -437,29 +458,10 @@ object Form1: TForm1
           TabOrder = 0
           OnClick = Panel4Click
         end
-        object btnLimpar: TButton
-          Left = 4
-          Height = 50
-          Top = 2
-          Width = 128
-          Align = alTop
-          BorderSpacing.Left = 2
-          BorderSpacing.Right = 2
-          Caption = 'LIMPAR'
-          Color = 10329501
-          Font.CharSet = ANSI_CHARSET
-          Font.Height = -20
-          Font.Name = 'Verdana'
-          Font.Pitch = fpVariable
-          Font.Quality = fqDraft
-          ParentFont = False
-          TabOrder = 1
-          OnClick = btnMultiplicacaoClick
-        end
         object btnDivisao: TButton
           Left = 4
-          Height = 50
-          Top = 52
+          Height = 60
+          Top = 2
           Width = 128
           Align = alTop
           BorderSpacing.Left = 2
@@ -472,13 +474,13 @@ object Form1: TForm1
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
           ParentFont = False
-          TabOrder = 2
+          TabOrder = 1
           OnClick = btnMultiplicacaoClick
         end
         object btnMultiplicacao: TButton
           Left = 4
-          Height = 50
-          Top = 102
+          Height = 60
+          Top = 62
           Width = 128
           Align = alTop
           Anchors = []
@@ -492,13 +494,13 @@ object Form1: TForm1
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
           ParentFont = False
-          TabOrder = 3
+          TabOrder = 2
           OnClick = btnMultiplicacaoClick
         end
         object btnSubtracao: TButton
           Left = 4
-          Height = 50
-          Top = 152
+          Height = 60
+          Top = 122
           Width = 128
           Align = alTop
           BorderSpacing.Left = 2
@@ -511,13 +513,13 @@ object Form1: TForm1
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
           ParentFont = False
-          TabOrder = 4
+          TabOrder = 3
           OnClick = btnMultiplicacaoClick
         end
         object btnSoma: TButton
           Left = 4
-          Height = 50
-          Top = 202
+          Height = 60
+          Top = 182
           Width = 128
           Align = alTop
           BorderSpacing.Left = 2
@@ -530,13 +532,13 @@ object Form1: TForm1
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
           ParentFont = False
-          TabOrder = 5
+          TabOrder = 4
           OnClick = btnMultiplicacaoClick
         end
         object btnIgual: TButton
           Left = 4
-          Height = 50
-          Top = 252
+          Height = 60
+          Top = 242
           Width = 128
           Align = alTop
           Anchors = []
@@ -550,7 +552,7 @@ object Form1: TForm1
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
           ParentFont = False
-          TabOrder = 6
+          TabOrder = 5
           OnClick = btnMultiplicacaoClick
         end
       end
