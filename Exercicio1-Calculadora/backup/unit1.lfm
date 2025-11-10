@@ -42,32 +42,9 @@ object Form1: TForm1
     ParentColor = False
     TabOrder = 1
     OnClick = pnDisplayClick
-    object edtDigite: TEdit
-      Left = 12
-      Height = 50
-      Top = 12
-      Width = 298
-      Align = alClient
-      Alignment = taRightJustify
-      BorderSpacing.Left = 10
-      BorderSpacing.Top = 10
-      BorderSpacing.Right = 10
-      BorderSpacing.Bottom = 10
-      BorderStyle = bsNone
-      Font.CharSet = ANSI_CHARSET
-      Font.Height = -29
-      Font.Name = 'Verdana'
-      Font.Pitch = fpVariable
-      Font.Quality = fqDraft
-      ParentFont = False
-      TabOrder = 0
-      Text = 'edtDigite'
-      OnChange = edtDigiteChange
-      OnKeyPress = edtDigiteKeyPress
-    end
     object btnLimpar: TButton
       Left = 320
-      Height = 70
+      Height = 46
       Top = 2
       Width = 72
       Align = alRight
@@ -81,8 +58,52 @@ object Form1: TForm1
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
       ParentFont = False
-      TabOrder = 1
+      TabOrder = 0
       OnClick = btnLimparClick
+    end
+    object edDisplay: TEdit
+      Left = 12
+      Height = 26
+      Top = 12
+      Width = 298
+      Align = alClient
+      Alignment = taRightJustify
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 10
+      BorderSpacing.Right = 10
+      BorderSpacing.Bottom = 10
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clNavy
+      Font.Height = -25
+      Font.Name = 'Verdana'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      Text = 'edDisplay'
+      OnChange = edDisplayChange
+    end
+    object edHistorico: TEdit
+      Left = 2
+      Height = 24
+      Top = 48
+      Width = 392
+      Align = alBottom
+      Alignment = taCenter
+      Color = 16115420
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clNavy
+      Font.Height = -13
+      Font.Name = 'Verdana'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 2
+      Text = 'edHistorico'
+      OnChange = edHistoricoChange
     end
   end
   object pnFundoBotoes: TPanel
@@ -379,7 +400,7 @@ object Form1: TForm1
       end
       object pnLinha4: TPanel
         Left = 0
-        Height = 68
+        Height = 66
         Top = 204
         Width = 254
         Align = alTop
@@ -387,7 +408,7 @@ object Form1: TForm1
         BevelInner = bvRaised
         BevelOuter = bvSpace
         BevelWidth = 2
-        ClientHeight = 68
+        ClientHeight = 66
         ClientWidth = 254
         Color = 16579836
         Font.CharSet = ANSI_CHARSET
@@ -402,7 +423,7 @@ object Form1: TForm1
         object btn0: TButton
           Left = 11
           Height = 46
-          Top = 11
+          Top = 9
           Width = 232
           Align = alBottom
           Anchors = []

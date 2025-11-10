@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  Buttons;
+  Buttons, LCLType;
 
 type
 
@@ -29,7 +29,8 @@ type
     btn7: TButton;
     btn8: TButton;
     btn9: TButton;
-    edtDigite: TEdit;
+    edHistorico: TEdit;
+    edDisplay: TEdit;
     Panel4: TPanel;
     pnFundo1: TPanel;
     pnFundoBotoes1: TPanel;
@@ -58,8 +59,10 @@ type
     procedure btnMultiplicacaoClick(Sender: TObject);
     procedure btnSomaClick(Sender: TObject);
     procedure btnSubtracaoClick(Sender: TObject);
-    procedure edtDigiteChange(Sender: TObject);
-    procedure edtDigiteKeyPress(Sender: TObject; var Key: char);
+    procedure edDisplayChange(Sender: TObject);
+    procedure edDisplayKeyPress(Sender: TObject; var Key: char);
+    procedure edHistoricoChange(Sender: TObject);
+    procedure edHistoricoKeyPress(Sender: TObject; var UTF8Key: TUTF8Char);
     procedure FormCreate(Sender: TObject);
     procedure Panel4Click(Sender: TObject);
     procedure pnDisplayClick(Sender: TObject);
@@ -85,7 +88,7 @@ procedure TForm1.FormCreate(Sender: TObject);
 begin
   BorderStyle := bsSingle; // impede redimensionamento
   BorderIcons := [biSystemMenu, biMinimize]; // remove botão de maximizar
-  edtDigite.Text := '0';
+  edDisplay.Text := '0';
 
 end;
 
@@ -164,15 +167,14 @@ begin
 
 end;
 
-procedure TForm1.edtDigiteChange(Sender: TObject);
+procedure TForm1.edDisplayChange(Sender: TObject);
 begin
 
 end;
 
-procedure TForm1.edtDigiteKeyPress(Sender: TObject; var Key: char);
+procedure TForm1.edHistoricoChange(Sender: TObject);
 begin
-     if not (Key in ['0'..'9', #8]) then //permite apenas números e a tecla 'ENTER'
-     Key := #0;      //cancela tecla
+
 end;
 
 procedure TForm1.btnLimparClick(Sender: TObject);
