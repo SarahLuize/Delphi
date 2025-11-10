@@ -1,10 +1,10 @@
 # Aprendendo DELPHI
 
 Exercícios do curso de **Prof. André Nobre** no Youtube, usando a IDE Lazarus.
-[Primeiro exercício (aula 3 do curso)](https://www.youtube.com/watch?v=kTtKkEjlnNk&list=PLcz5abtuMBtP22AW3gllUu89fzGlPkL2W&index=3)
 
 ## Estrutura do repositório
-📁 `Exercicio-1-Calculadora`
+📁 `Exercicio-1-Calculadora` 
+* 🔗[Primeiro exercício (aula 3 do curso)](https://www.youtube.com/watch?v=kTtKkEjlnNk&list=PLcz5abtuMBtP22AW3gllUu89fzGlPkL2W&index=3)
 * 📝 – Primeiro exercício: criação de uma calculadora simples em Lazarus.  
 * ⏳ Projeto em andamento.
 
