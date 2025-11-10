@@ -10,9 +10,9 @@ uses
 
 type
 
-  { TForm1 }
+  { TfView }
 
-  TForm1 = class(TForm)
+  TfView = class(TForm)
     btnLimpar: TButton;
     btnMultiplicacao: TButton;
     btnSoma: TButton;
@@ -61,7 +61,6 @@ type
     procedure btnSubtracaoClick(Sender: TObject);
     procedure edDisplayChange(Sender: TObject);
     procedure edHistoricoChange(Sender: TObject);
-    procedure edHistoricoKeyPress(Sender: TObject; var UTF8Key: TUTF8Char);
     procedure FormCreate(Sender: TObject);
     procedure Panel4Click(Sender: TObject);
     procedure pnDisplayClick(Sender: TObject);
@@ -75,133 +74,134 @@ type
   end;
 
 var
-  Form1: TForm1;
+  fView: TfView;
 
 implementation
 
 {$R *.lfm}
 
-{ TForm1 }
+{ TfView }
 
-procedure TForm1.FormCreate(Sender: TObject);
+procedure TfView.FormCreate(Sender: TObject);
 begin
   BorderStyle := bsSingle; // impede redimensionamento
   BorderIcons := [biSystemMenu, biMinimize]; // remove botão de maximizar
   edDisplay.Text := '0';
+  edHistorico.Text := '';
 
 end;
 
-procedure TForm1.btn0Click(Sender: TObject);
+procedure TfView.btn0Click(Sender: TObject);
+begin
+  edDisplay.Text := edDisplay.Text + '0';
+end;
+
+procedure TfView.btn1Click(Sender: TObject);
+begin
+  edDisplay.Text := edDisplay.Text + '1';
+end;
+
+procedure TfView.btn2Click(Sender: TObject);
+begin
+  edDisplay.Text := edDisplay.Text + '2';
+end;
+
+procedure TfView.btn3Click(Sender: TObject);
+begin
+  edDisplay.Text := edDisplay.Text +'3';
+end;
+
+procedure TfView.btn4Click(Sender: TObject);
+begin
+  edDisplay.Text := '4';
+end;
+
+procedure TfView.btn5Click(Sender: TObject);
+begin
+  edDisplay.Text := '5';
+end;
+
+procedure TfView.btn6Click(Sender: TObject);
+begin
+  edDisplay.Text := '6';
+end;
+
+procedure TfView.btn7Click(Sender: TObject);
+begin
+  edDisplay.Text := '7';
+end;
+
+procedure TfView.btn8Click(Sender: TObject);
+begin
+  edDisplay.Text := '8';
+end;
+
+procedure TfView.btn9Click(Sender: TObject);
+begin
+  edDisplay.Text := '9';
+end;
+
+procedure TfView.btnDivisaoClick(Sender: TObject);
 begin
 
 end;
 
-procedure TForm1.btn1Click(Sender: TObject);
+procedure TfView.btnMultiplicacaoClick(Sender: TObject);
 begin
 
 end;
 
-procedure TForm1.btn2Click(Sender: TObject);
+procedure TfView.btnSubtracaoClick(Sender: TObject);
 begin
 
 end;
 
-procedure TForm1.btn3Click(Sender: TObject);
+procedure TfView.btnSomaClick(Sender: TObject);
 begin
 
 end;
 
-procedure TForm1.btn4Click(Sender: TObject);
+procedure TfView.btnIgualClick(Sender: TObject);
 begin
 
 end;
 
-procedure TForm1.btn5Click(Sender: TObject);
+procedure TfView.edDisplayChange(Sender: TObject);
 begin
 
 end;
 
-procedure TForm1.btn6Click(Sender: TObject);
+procedure TfView.edHistoricoChange(Sender: TObject);
 begin
 
 end;
 
-procedure TForm1.btn7Click(Sender: TObject);
+procedure TfView.btnLimparClick(Sender: TObject);
 begin
-
+  edDisplay.Text := '0';
 end;
 
-procedure TForm1.btn8Click(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.btn9Click(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.btnDivisaoClick(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.btnMultiplicacaoClick(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.btnSubtracaoClick(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.btnSomaClick(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.btnIgualClick(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.edDisplayChange(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.edHistoricoChange(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.btnLimparClick(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.Panel4Click(Sender: TObject);
+procedure TfView.Panel4Click(Sender: TObject);
 begin
   Panel4.BorderSpacing.Left := 0;
 end;
 
-procedure TForm1.pnDisplayClick(Sender: TObject);
+procedure TfView.pnDisplayClick(Sender: TObject);
 begin
 
 end;
 
-procedure TForm1.pnFundoClick(Sender: TObject);
+procedure TfView.pnFundoClick(Sender: TObject);
 begin
 
 end;
 
-procedure TForm1.pnLinha1Click(Sender: TObject);
+procedure TfView.pnLinha1Click(Sender: TObject);
 begin
 
 end;
 
-procedure TForm1.SpeedButton1Click(Sender: TObject);
+procedure TfView.SpeedButton1Click(Sender: TObject);
 begin
 
 end;
