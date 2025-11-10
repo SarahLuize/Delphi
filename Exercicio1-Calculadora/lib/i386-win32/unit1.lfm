@@ -1,16 +1,16 @@
 object Form1: TForm1
   Left = 532
-  Height = 385
+  Height = 347
   Top = 191
   Width = 396
-  Caption = 'Form1'
-  ClientHeight = 385
+  Caption = 'Calculadora 1.0'
+  ClientHeight = 347
   ClientWidth = 396
   OnCreate = FormCreate
   object pnFundo: TPanel
     Left = 0
-    Height = 327
-    Top = 58
+    Height = 273
+    Top = 74
     Width = 396
     Align = alClient
     AutoSize = True
@@ -28,48 +28,113 @@ object Form1: TForm1
   end
   object pnDisplay: TPanel
     Left = 0
-    Height = 58
+    Height = 74
     Top = 0
     Width = 396
     Align = alTop
     BevelColor = 12287488
     BevelInner = bvRaised
     BevelOuter = bvSpace
-    Color = 16579836
+    ClientHeight = 74
+    ClientWidth = 396
+    Color = clWhite
     ParentBackground = False
     ParentColor = False
     TabOrder = 1
     OnClick = pnDisplayClick
+    object btnLimpar: TButton
+      Left = 320
+      Height = 46
+      Top = 2
+      Width = 72
+      Align = alRight
+      BorderSpacing.Left = 2
+      BorderSpacing.Right = 2
+      Caption = 'C'
+      Color = 10329501
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -20
+      Font.Name = 'Verdana'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 0
+      OnClick = btnLimparClick
+    end
+    object edDisplay: TEdit
+      Left = 12
+      Height = 26
+      Top = 12
+      Width = 298
+      Align = alClient
+      Alignment = taRightJustify
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 10
+      BorderSpacing.Right = 10
+      BorderSpacing.Bottom = 10
+      BorderStyle = bsNone
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clNavy
+      Font.Height = -25
+      Font.Name = 'Verdana'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      Text = 'edDisplay'
+      OnChange = edDisplayChange
+    end
+    object edHistorico: TEdit
+      Left = 2
+      Height = 24
+      Top = 48
+      Width = 392
+      Align = alBottom
+      Alignment = taCenter
+      Color = 16115420
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clNavy
+      Font.Height = -13
+      Font.Name = 'Verdana'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 2
+      Text = 'edHistorico'
+      OnChange = edHistoricoChange
+    end
   end
   object pnFundoBotoes: TPanel
     Left = 0
-    Height = 327
-    Top = 58
+    Height = 273
+    Top = 74
     Width = 396
     Align = alClient
     BevelColor = 12287488
     BevelInner = bvRaised
     BevelOuter = bvSpace
-    ClientHeight = 327
+    ClientHeight = 273
     ClientWidth = 396
-    Color = 16579836
+    Color = 14671839
     ParentBackground = False
     ParentColor = False
     TabOrder = 2
     OnClick = pnDisplayClick
-    object Panel3: TPanel
+    object pnFundoBotoesNumericos: TPanel
       AnchorSideLeft.Control = pnFundoBotoes
       AnchorSideTop.Control = pnFundoBotoes
       AnchorSideBottom.Control = pnFundoBotoes
       AnchorSideBottom.Side = asrBottom
       Left = 2
-      Height = 323
+      Height = 269
       Top = 2
-      Width = 249
+      Width = 254
       Anchors = [akTop, akLeft, akBottom]
       BevelOuter = bvNone
-      ClientHeight = 323
-      ClientWidth = 249
+      ClientHeight = 269
+      ClientWidth = 254
       Color = 14671839
       ParentBackground = False
       ParentColor = False
@@ -79,14 +144,14 @@ object Form1: TForm1
         Left = 0
         Height = 68
         Top = 0
-        Width = 249
+        Width = 254
         Align = alTop
         BevelColor = 14671839
         BevelInner = bvRaised
         BevelOuter = bvSpace
         BevelWidth = 2
         ClientHeight = 68
-        ClientWidth = 249
+        ClientWidth = 254
         Color = 16579836
         Font.CharSet = ANSI_CHARSET
         Font.Height = -20
@@ -97,8 +162,8 @@ object Form1: TForm1
         ParentFont = False
         TabOrder = 0
         OnClick = pnDisplayClick
-        object Button1: TButton
-          Left = 13
+        object btn7: TButton
+          Left = 14
           Height = 50
           Top = 9
           Width = 64
@@ -116,10 +181,10 @@ object Form1: TForm1
           Font.Quality = fqDraft
           ParentFont = False
           TabOrder = 0
-          OnClick = Button1Click
+          OnClick = btn7Click
         end
-        object Button2: TButton
-          Left = 92
+        object btn8: TButton
+          Left = 94
           Height = 50
           Top = 9
           Width = 64
@@ -137,10 +202,10 @@ object Form1: TForm1
           Font.Quality = fqDraft
           ParentFont = False
           TabOrder = 1
-          OnClick = Button2Click
+          OnClick = btn8Click
         end
-        object Button3: TButton
-          Left = 171
+        object btn9: TButton
+          Left = 175
           Height = 50
           Top = 9
           Width = 64
@@ -158,21 +223,21 @@ object Form1: TForm1
           Font.Quality = fqDraft
           ParentFont = False
           TabOrder = 2
-          OnClick = Button3Click
+          OnClick = btn9Click
         end
       end
       object pnLinha2: TPanel
         Left = 0
         Height = 68
-        Top = 204
-        Width = 249
+        Top = 68
+        Width = 254
         Align = alTop
         BevelColor = 14671839
         BevelInner = bvRaised
         BevelOuter = bvSpace
         BevelWidth = 2
         ClientHeight = 68
-        ClientWidth = 249
+        ClientWidth = 254
         Color = 16579836
         Font.CharSet = ANSI_CHARSET
         Font.Height = -20
@@ -183,18 +248,17 @@ object Form1: TForm1
         ParentFont = False
         TabOrder = 1
         OnClick = pnDisplayClick
-        object Button4: TButton
-          Left = 11
-          Height = 46
-          Top = 11
-          Width = 227
-          Align = alClient
+        object btn4: TButton
+          Left = 14
+          Height = 50
+          Top = 9
+          Width = 64
           Anchors = []
-          BorderSpacing.Left = 7
-          BorderSpacing.Top = 7
-          BorderSpacing.Right = 7
-          BorderSpacing.Bottom = 7
-          Caption = '7'
+          BorderSpacing.Left = 2
+          BorderSpacing.Top = 2
+          BorderSpacing.Right = 2
+          BorderSpacing.Bottom = 2
+          Caption = '4'
           Color = 15198183
           Font.CharSet = ANSI_CHARSET
           Font.Height = -20
@@ -203,21 +267,63 @@ object Form1: TForm1
           Font.Quality = fqDraft
           ParentFont = False
           TabOrder = 0
-          OnClick = Button4Click
+          OnClick = btn4Click
+        end
+        object btn5: TButton
+          Left = 94
+          Height = 50
+          Top = 9
+          Width = 64
+          Anchors = []
+          BorderSpacing.Left = 2
+          BorderSpacing.Top = 2
+          BorderSpacing.Right = 2
+          BorderSpacing.Bottom = 2
+          Caption = '5'
+          Color = 15198183
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -20
+          Font.Name = 'Verdana'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 1
+          OnClick = btn5Click
+        end
+        object btn6: TButton
+          Left = 175
+          Height = 50
+          Top = 9
+          Width = 64
+          Anchors = []
+          BorderSpacing.Left = 2
+          BorderSpacing.Top = 2
+          BorderSpacing.Right = 2
+          BorderSpacing.Bottom = 2
+          Caption = '6'
+          Color = 15198183
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -20
+          Font.Name = 'Verdana'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 2
+          OnClick = btn6Click
         end
       end
       object pnLinha3: TPanel
         Left = 0
         Height = 68
         Top = 136
-        Width = 249
+        Width = 254
         Align = alTop
         BevelColor = 14671839
         BevelInner = bvRaised
         BevelOuter = bvSpace
         BevelWidth = 2
         ClientHeight = 68
-        ClientWidth = 249
+        ClientWidth = 254
         Color = 16579836
         Font.CharSet = ANSI_CHARSET
         Font.Height = -20
@@ -228,8 +334,8 @@ object Form1: TForm1
         ParentFont = False
         TabOrder = 2
         OnClick = pnDisplayClick
-        object Button7: TButton
-          Left = 13
+        object btn1: TButton
+          Left = 14
           Height = 50
           Top = 9
           Width = 64
@@ -238,7 +344,7 @@ object Form1: TForm1
           BorderSpacing.Top = 2
           BorderSpacing.Right = 2
           BorderSpacing.Bottom = 2
-          Caption = '7'
+          Caption = '1'
           Color = 15198183
           Font.CharSet = ANSI_CHARSET
           Font.Height = -20
@@ -247,10 +353,10 @@ object Form1: TForm1
           Font.Quality = fqDraft
           ParentFont = False
           TabOrder = 0
-          OnClick = Button7Click
+          OnClick = btn1Click
         end
-        object Button8: TButton
-          Left = 92
+        object btn2: TButton
+          Left = 94
           Height = 50
           Top = 9
           Width = 64
@@ -259,7 +365,7 @@ object Form1: TForm1
           BorderSpacing.Top = 2
           BorderSpacing.Right = 2
           BorderSpacing.Bottom = 2
-          Caption = '8'
+          Caption = '2'
           Color = 15198183
           Font.CharSet = ANSI_CHARSET
           Font.Height = -20
@@ -268,10 +374,10 @@ object Form1: TForm1
           Font.Quality = fqDraft
           ParentFont = False
           TabOrder = 1
-          OnClick = Button8Click
+          OnClick = btn2Click
         end
-        object Button9: TButton
-          Left = 171
+        object btn3: TButton
+          Left = 175
           Height = 50
           Top = 9
           Width = 64
@@ -280,7 +386,7 @@ object Form1: TForm1
           BorderSpacing.Top = 2
           BorderSpacing.Right = 2
           BorderSpacing.Bottom = 2
-          Caption = '9'
+          Caption = '3'
           Color = 15198183
           Font.CharSet = ANSI_CHARSET
           Font.Height = -20
@@ -289,21 +395,21 @@ object Form1: TForm1
           Font.Quality = fqDraft
           ParentFont = False
           TabOrder = 2
-          OnClick = Button9Click
+          OnClick = btn3Click
         end
       end
       object pnLinha4: TPanel
         Left = 0
-        Height = 68
-        Top = 68
-        Width = 249
+        Height = 66
+        Top = 204
+        Width = 254
         Align = alTop
         BevelColor = 14671839
         BevelInner = bvRaised
         BevelOuter = bvSpace
         BevelWidth = 2
-        ClientHeight = 68
-        ClientWidth = 249
+        ClientHeight = 66
+        ClientWidth = 254
         Color = 16579836
         Font.CharSet = ANSI_CHARSET
         Font.Height = -20
@@ -314,17 +420,18 @@ object Form1: TForm1
         ParentFont = False
         TabOrder = 3
         OnClick = pnDisplayClick
-        object Button10: TButton
-          Left = 13
-          Height = 50
+        object btn0: TButton
+          Left = 11
+          Height = 46
           Top = 9
-          Width = 64
+          Width = 232
+          Align = alBottom
           Anchors = []
-          BorderSpacing.Left = 2
-          BorderSpacing.Top = 2
-          BorderSpacing.Right = 2
-          BorderSpacing.Bottom = 2
-          Caption = '7'
+          BorderSpacing.Left = 7
+          BorderSpacing.Top = 7
+          BorderSpacing.Right = 7
+          BorderSpacing.Bottom = 7
+          Caption = '0'
           Color = 15198183
           Font.CharSet = ANSI_CHARSET
           Font.Height = -20
@@ -333,19 +440,84 @@ object Form1: TForm1
           Font.Quality = fqDraft
           ParentFont = False
           TabOrder = 0
-          OnClick = Button10Click
+          OnClick = btn0Click
         end
-        object Button11: TButton
-          Left = 92
-          Height = 50
-          Top = 9
-          Width = 64
-          Anchors = []
+      end
+    end
+    object Panel4: TPanel
+      Left = 258
+      Height = 269
+      Top = 2
+      Width = 136
+      Align = alRight
+      BevelOuter = bvNone
+      ClientHeight = 269
+      ClientWidth = 136
+      Color = 14671839
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 1
+      OnClick = Panel4Click
+      object pnFundo1: TPanel
+        Left = 0
+        Height = 269
+        Top = 0
+        Width = 136
+        Align = alClient
+        AutoSize = True
+        BevelColor = 12287488
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        BevelWidth = 6
+        BorderWidth = 6
+        Color = 12287488
+        DockSite = True
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 0
+        OnClick = pnFundoClick
+      end
+      object pnFundoBotoes1: TPanel
+        Left = 0
+        Height = 269
+        Top = 0
+        Width = 136
+        Align = alClient
+        BevelColor = 12287488
+        BevelInner = bvRaised
+        BevelOuter = bvSpace
+        ClientHeight = 269
+        ClientWidth = 136
+        Color = 16579836
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 1
+        OnClick = pnDisplayClick
+        object pnFundoBotoesNumericos1: TPanel
+          AnchorSideLeft.Control = pnFundoBotoes1
+          AnchorSideTop.Control = pnFundoBotoes1
+          AnchorSideBottom.Control = pnFundoBotoes1
+          AnchorSideBottom.Side = asrBottom
+          Left = 2
+          Height = 265
+          Top = 2
+          Width = 249
+          Anchors = [akTop, akLeft, akBottom]
+          BevelOuter = bvNone
+          Color = 14671839
+          ParentBackground = False
+          ParentColor = False
+          TabOrder = 0
+        end
+        object btnDivisao: TButton
+          Left = 4
+          Height = 52
+          Top = 2
+          Width = 128
+          Align = alTop
           BorderSpacing.Left = 2
-          BorderSpacing.Top = 2
           BorderSpacing.Right = 2
-          BorderSpacing.Bottom = 2
-          Caption = '8'
+          Caption = '÷'
           Color = 15198183
           Font.CharSet = ANSI_CHARSET
           Font.Height = -20
@@ -354,19 +526,18 @@ object Form1: TForm1
           Font.Quality = fqDraft
           ParentFont = False
           TabOrder = 1
-          OnClick = Button11Click
+          OnClick = btnDivisaoClick
         end
-        object Button12: TButton
-          Left = 171
-          Height = 50
-          Top = 9
-          Width = 64
+        object btnMultiplicacao: TButton
+          Left = 4
+          Height = 52
+          Top = 54
+          Width = 128
+          Align = alTop
           Anchors = []
           BorderSpacing.Left = 2
-          BorderSpacing.Top = 2
           BorderSpacing.Right = 2
-          BorderSpacing.Bottom = 2
-          Caption = '9'
+          Caption = 'x'
           Color = 15198183
           Font.CharSet = ANSI_CHARSET
           Font.Height = -20
@@ -375,22 +546,67 @@ object Form1: TForm1
           Font.Quality = fqDraft
           ParentFont = False
           TabOrder = 2
-          OnClick = Button12Click
+          OnClick = btnMultiplicacaoClick
+        end
+        object btnSubtracao: TButton
+          Left = 4
+          Height = 52
+          Top = 106
+          Width = 128
+          Align = alTop
+          BorderSpacing.Left = 2
+          BorderSpacing.Right = 2
+          Caption = '-'
+          Color = 15198183
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -20
+          Font.Name = 'Verdana'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 3
+          OnClick = btnSubtracaoClick
+        end
+        object btnSoma: TButton
+          Left = 4
+          Height = 52
+          Top = 158
+          Width = 128
+          Align = alTop
+          BorderSpacing.Left = 2
+          BorderSpacing.Right = 2
+          Caption = '+'
+          Color = 15198183
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -20
+          Font.Name = 'Verdana'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 4
+          OnClick = btnSomaClick
+        end
+        object btnIgual: TButton
+          Left = 4
+          Height = 52
+          Top = 210
+          Width = 128
+          Align = alTop
+          Anchors = []
+          BorderSpacing.Left = 2
+          BorderSpacing.Right = 2
+          Caption = '='
+          Color = 10329501
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -20
+          Font.Name = 'Verdana'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 5
+          OnClick = btnIgualClick
         end
       end
-    end
-    object Panel4: TPanel
-      Left = 258
-      Height = 323
-      Top = 2
-      Width = 136
-      Align = alRight
-      BevelOuter = bvNone
-      Color = 14671839
-      ParentBackground = False
-      ParentColor = False
-      TabOrder = 1
-      OnClick = Panel4Click
     end
   end
 end

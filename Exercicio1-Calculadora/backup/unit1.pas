@@ -60,7 +60,6 @@ type
     procedure btnSomaClick(Sender: TObject);
     procedure btnSubtracaoClick(Sender: TObject);
     procedure edDisplayChange(Sender: TObject);
-    procedure edDisplayKeyPress(Sender: TObject; var Key: char);
     procedure edHistoricoChange(Sender: TObject);
     procedure edHistoricoKeyPress(Sender: TObject; var UTF8Key: TUTF8Char);
     procedure FormCreate(Sender: TObject);
