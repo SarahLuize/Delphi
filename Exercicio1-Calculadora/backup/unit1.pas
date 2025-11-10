@@ -83,6 +83,8 @@ implementation
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
+  BorderStyle := bsSingle; // impede redimensionamento
+  BorderIcons := [biSystemMenu, biMinimize]; // remove botão de maximizar
   edtDigite.Text := '0';
 
 end;

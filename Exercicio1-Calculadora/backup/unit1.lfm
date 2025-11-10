@@ -1,15 +1,15 @@
 object Form1: TForm1
   Left = 532
-  Height = 383
+  Height = 347
   Top = 191
   Width = 396
   Caption = 'Calculadora 1.0'
-  ClientHeight = 383
+  ClientHeight = 347
   ClientWidth = 396
   OnCreate = FormCreate
   object pnFundo: TPanel
     Left = 0
-    Height = 309
+    Height = 273
     Top = 74
     Width = 396
     Align = alClient
@@ -87,14 +87,14 @@ object Form1: TForm1
   end
   object pnFundoBotoes: TPanel
     Left = 0
-    Height = 309
+    Height = 273
     Top = 74
     Width = 396
     Align = alClient
     BevelColor = 12287488
     BevelInner = bvRaised
     BevelOuter = bvSpace
-    ClientHeight = 309
+    ClientHeight = 273
     ClientWidth = 396
     Color = 14671839
     ParentBackground = False
@@ -107,12 +107,12 @@ object Form1: TForm1
       AnchorSideBottom.Control = pnFundoBotoes
       AnchorSideBottom.Side = asrBottom
       Left = 2
-      Height = 305
+      Height = 269
       Top = 2
       Width = 254
       Anchors = [akTop, akLeft, akBottom]
       BevelOuter = bvNone
-      ClientHeight = 305
+      ClientHeight = 269
       ClientWidth = 254
       Color = 14671839
       ParentBackground = False
@@ -425,12 +425,12 @@ object Form1: TForm1
     end
     object Panel4: TPanel
       Left = 258
-      Height = 305
+      Height = 269
       Top = 2
       Width = 136
       Align = alRight
       BevelOuter = bvNone
-      ClientHeight = 305
+      ClientHeight = 269
       ClientWidth = 136
       Color = 14671839
       ParentBackground = False
@@ -439,7 +439,7 @@ object Form1: TForm1
       OnClick = Panel4Click
       object pnFundo1: TPanel
         Left = 0
-        Height = 305
+        Height = 269
         Top = 0
         Width = 136
         Align = alClient
@@ -458,14 +458,14 @@ object Form1: TForm1
       end
       object pnFundoBotoes1: TPanel
         Left = 0
-        Height = 305
+        Height = 269
         Top = 0
         Width = 136
         Align = alClient
         BevelColor = 12287488
         BevelInner = bvRaised
         BevelOuter = bvSpace
-        ClientHeight = 305
+        ClientHeight = 269
         ClientWidth = 136
         Color = 16579836
         ParentBackground = False
@@ -478,7 +478,7 @@ object Form1: TForm1
           AnchorSideBottom.Control = pnFundoBotoes1
           AnchorSideBottom.Side = asrBottom
           Left = 2
-          Height = 301
+          Height = 265
           Top = 2
           Width = 249
           Anchors = [akTop, akLeft, akBottom]
@@ -490,7 +490,7 @@ object Form1: TForm1
         end
         object btnDivisao: TButton
           Left = 4
-          Height = 60
+          Height = 52
           Top = 2
           Width = 128
           Align = alTop
@@ -509,8 +509,8 @@ object Form1: TForm1
         end
         object btnMultiplicacao: TButton
           Left = 4
-          Height = 60
-          Top = 62
+          Height = 52
+          Top = 54
           Width = 128
           Align = alTop
           Anchors = []
@@ -529,8 +529,8 @@ object Form1: TForm1
         end
         object btnSubtracao: TButton
           Left = 4
-          Height = 60
-          Top = 122
+          Height = 52
+          Top = 106
           Width = 128
           Align = alTop
           BorderSpacing.Left = 2
@@ -548,8 +548,8 @@ object Form1: TForm1
         end
         object btnSoma: TButton
           Left = 4
-          Height = 60
-          Top = 182
+          Height = 52
+          Top = 158
           Width = 128
           Align = alTop
           BorderSpacing.Left = 2
@@ -567,8 +567,8 @@ object Form1: TForm1
         end
         object btnIgual: TButton
           Left = 4
-          Height = 60
-          Top = 242
+          Height = 52
+          Top = 210
           Width = 128
           Align = alTop
           Anchors = []
