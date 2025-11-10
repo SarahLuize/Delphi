@@ -66,7 +66,6 @@ type
     procedure pnDisplayClick(Sender: TObject);
     procedure pnFundoClick(Sender: TObject);
     procedure pnLinha1Click(Sender: TObject);
-    procedure SpeedButton1Click(Sender: TObject);
   private
 
   public
@@ -97,7 +96,11 @@ begin
 end;
 
 procedure TfView.btn1Click(Sender: TObject);
+var
+  LNumero : Double;
 begin
+  LNumero := TBitBtn(Sender).Tag;
+  //FCalculadora.AddNumero(LNumero);
   edDisplay.Text := edDisplay.Text + '1';
 end;
 
@@ -113,32 +116,32 @@ end;
 
 procedure TfView.btn4Click(Sender: TObject);
 begin
-  edDisplay.Text := '4';
+  edDisplay.Text := edDisplay.Text + '4';
 end;
 
 procedure TfView.btn5Click(Sender: TObject);
 begin
-  edDisplay.Text := '5';
+  edDisplay.Text := edDisplay.Text + '5';
 end;
 
 procedure TfView.btn6Click(Sender: TObject);
 begin
-  edDisplay.Text := '6';
+  edDisplay.Text := edDisplay.Text + '6';
 end;
 
 procedure TfView.btn7Click(Sender: TObject);
 begin
-  edDisplay.Text := '7';
+  edDisplay.Text := edDisplay.Text + '7';
 end;
 
 procedure TfView.btn8Click(Sender: TObject);
 begin
-  edDisplay.Text := '8';
+  edDisplay.Text := edDisplay.Text + '8';
 end;
 
 procedure TfView.btn9Click(Sender: TObject);
 begin
-  edDisplay.Text := '9';
+  edDisplay.Text := edDisplay.Text + '9';
 end;
 
 procedure TfView.btnDivisaoClick(Sender: TObject);

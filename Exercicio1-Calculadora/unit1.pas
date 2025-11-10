@@ -66,7 +66,6 @@ type
     procedure pnDisplayClick(Sender: TObject);
     procedure pnFundoClick(Sender: TObject);
     procedure pnLinha1Click(Sender: TObject);
-    procedure SpeedButton1Click(Sender: TObject);
   private
 
   public
@@ -97,7 +96,11 @@ begin
 end;
 
 procedure TfView.btn1Click(Sender: TObject);
+var
+  LNumero : Double;
 begin
+  //LNumero := TBitBtn(Sender).Tag;
+  //FCalculadora.AddNumero(LNumero);
   edDisplay.Text := edDisplay.Text + '1';
 end;
 
