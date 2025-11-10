@@ -10,8 +10,7 @@ Exercícios do curso de **Prof. André Nobre** no Youtube, usando a IDE Lazarus.
 
 **Progresso:**  
 ✅ Interface da calculadora criada  
-✅ Eventos nomeados e componentes ajustados na ordem certa  
-✅ Entrada configurada para aceitar apenas números (iniciando com 0)  
+✅ Eventos nomeados e componentes ajustados na ordem certa
 🔜 Programar os botões numéricos e operadores (+, −, ×, ÷)  
 🔜 Fazer o cálculo e exibir o resultado no display
 
