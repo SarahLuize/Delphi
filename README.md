@@ -11,9 +11,12 @@ Exercícios de Object Pascal usando a IDE Lazarus.
 
 **Progresso:**  
 ✅ Interface da calculadora criada  
-✅ Eventos nomeados e componentes ajustados na ordem certa
-🔜 Programar os botões numéricos e operadores (+, −, ×, ÷)  
-🔜 Fazer o cálculo e exibir o resultado no display
+✅ Eventos nomeados e componentes ajustados na ordem certa  
+✅ Programar os botões numéricos e operadores (+, −, ×, ÷)  
+✅ Fazer o cálculo e exibir o resultado no display
+🔜 Refazer código do Tutorial 2 para usar classes (como no Tutorial 1)
+🔜 Melhorar layout
+🔜 Adicionar botão decimal
 
 *(novos exercícios serão adicionados em pastas separadas)*
 
