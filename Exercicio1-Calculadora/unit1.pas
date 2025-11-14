@@ -67,7 +67,8 @@ type
     procedure pnFundoClick(Sender: TObject);
     procedure pnLinha1Click(Sender: TObject);
   private
-
+    PrimeiroNumero, SegundoNumero, Resposta:String;
+    Operador:Char;
   public
 
   end;
@@ -92,56 +93,82 @@ end;
 
 procedure TfView.btn0Click(Sender: TObject);
 begin
-  edDisplay.Text := edDisplay.Text + '0';
+  if edDisplay.Text <> '0' then
+      edDisplay.Text := edDisplay.Text + '0';
 end;
 
 procedure TfView.btn1Click(Sender: TObject);
 var
   LNumero : Double;
 begin
-  //LNumero := TBitBtn(Sender).Tag;
-  //FCalculadora.AddNumero(LNumero);
-  edDisplay.Text := edDisplay.Text + '1';
+  if edDisplay.Text = '0' then
+     edDisplay.Text := '1'
+  else
+      edDisplay.Text := edDisplay.Text + '1';
 end;
 
 procedure TfView.btn2Click(Sender: TObject);
 begin
-  edDisplay.Text := edDisplay.Text + '2';
+  if edDisplay.Text = '0' then
+     edDisplay.Text := '2'
+  else
+      edDisplay.Text := edDisplay.Text + '2';
 end;
 
 procedure TfView.btn3Click(Sender: TObject);
 begin
-  edDisplay.Text := edDisplay.Text +'3';
+  if edDisplay.Text = '0' then
+     edDisplay.Text := '3'
+  else
+      edDisplay.Text := edDisplay.Text + '3';
 end;
 
 procedure TfView.btn4Click(Sender: TObject);
 begin
-  edDisplay.Text := edDisplay.Text + '4';
+  if edDisplay.Text = '0' then
+     edDisplay.Text := '4'
+  else
+      edDisplay.Text := edDisplay.Text + '4';
 end;
 
 procedure TfView.btn5Click(Sender: TObject);
 begin
-  edDisplay.Text := edDisplay.Text + '5';
+  if edDisplay.Text = '0' then
+     edDisplay.Text := '5'
+  else
+      edDisplay.Text := edDisplay.Text + '5';
 end;
 
 procedure TfView.btn6Click(Sender: TObject);
 begin
-  edDisplay.Text := edDisplay.Text + '6';
+  if edDisplay.Text = '0' then
+     edDisplay.Text := '6'
+  else
+      edDisplay.Text := edDisplay.Text + '6';
 end;
 
 procedure TfView.btn7Click(Sender: TObject);
 begin
-  edDisplay.Text := edDisplay.Text + '7';
+  if edDisplay.Text = '0' then
+     edDisplay.Text := '7'
+  else
+      edDisplay.Text := edDisplay.Text + '7';
 end;
 
 procedure TfView.btn8Click(Sender: TObject);
 begin
-  edDisplay.Text := edDisplay.Text + '8';
+  if edDisplay.Text = '0' then
+     edDisplay.Text := '8'
+  else
+      edDisplay.Text := edDisplay.Text + '8';
 end;
 
 procedure TfView.btn9Click(Sender: TObject);
 begin
-  edDisplay.Text := edDisplay.Text + '9';
+  if edDisplay.Text = '0' then
+     edDisplay.Text := '9'
+  else
+      edDisplay.Text := edDisplay.Text + '9';
 end;
 
 procedure TfView.btnDivisaoClick(Sender: TObject);
@@ -200,11 +227,6 @@ begin
 end;
 
 procedure TfView.pnLinha1Click(Sender: TObject);
-begin
-
-end;
-
-procedure TfView.SpeedButton1Click(Sender: TObject);
 begin
 
 end;

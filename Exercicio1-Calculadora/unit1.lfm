@@ -50,7 +50,7 @@ object fView: TfView
       Align = alRight
       BorderSpacing.Left = 2
       BorderSpacing.Right = 2
-      Caption = 'C'
+      Caption = '⌫'
       Color = 10329501
       Font.CharSet = ANSI_CHARSET
       Font.Height = -20
