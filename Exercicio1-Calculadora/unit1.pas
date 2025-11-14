@@ -13,12 +13,13 @@ type
   { TfView }
 
   TfView = class(TForm)
+    btnDivisao: TButton;
+    btnBackspace: TButton;
     btnLimpar: TButton;
     btnMultiplicacao: TButton;
     btnSoma: TButton;
     btnIgual: TButton;
     btnSubtracao: TButton;
-    btnDivisao: TButton;
     btn0: TButton;
     btn1: TButton;
     btn2: TButton;
@@ -53,6 +54,7 @@ type
     procedure btn7Click(Sender: TObject);
     procedure btn8Click(Sender: TObject);
     procedure btn9Click(Sender: TObject);
+    procedure btnBackspaceClick(Sender: TObject);
     procedure btnDivisaoClick(Sender: TObject);
     procedure btnIgualClick(Sender: TObject);
     procedure btnLimparClick(Sender: TObject);
@@ -98,8 +100,6 @@ begin
 end;
 
 procedure TfView.btn1Click(Sender: TObject);
-var
-  LNumero : Double;
 begin
   if edDisplay.Text = '0' then
      edDisplay.Text := '1'
@@ -169,6 +169,11 @@ begin
      edDisplay.Text := '9'
   else
       edDisplay.Text := edDisplay.Text + '9';
+end;
+
+procedure TfView.btnBackspaceClick(Sender: TObject);
+begin
+  edDisplay.Text := copy(edDisplay.Text, 1, length(edDisplay.Text)-1);
 end;
 
 procedure TfView.btnDivisaoClick(Sender: TObject);

@@ -50,7 +50,7 @@ object fView: TfView
       Align = alRight
       BorderSpacing.Left = 2
       BorderSpacing.Right = 2
-      Caption = '⌫'
+      Caption = 'C'
       Color = 10329501
       Font.CharSet = ANSI_CHARSET
       Font.Height = -20
@@ -518,12 +518,31 @@ object fView: TfView
           ParentColor = False
           TabOrder = 0
         end
+        object btnBackspace: TButton
+          Left = 4
+          Height = 44
+          Top = 3
+          Width = 128
+          Align = alBottom
+          BorderSpacing.Left = 2
+          BorderSpacing.Right = 2
+          Caption = '⌫'
+          Color = 15198183
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -20
+          Font.Name = 'Verdana'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 1
+          OnClick = btnBackspaceClick
+        end
         object btnDivisao: TButton
           Left = 4
-          Height = 52
-          Top = 2
+          Height = 44
+          Top = 47
           Width = 128
-          Align = alTop
+          Align = alBottom
           BorderSpacing.Left = 2
           BorderSpacing.Right = 2
           Caption = '÷'
@@ -534,16 +553,15 @@ object fView: TfView
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
           ParentFont = False
-          TabOrder = 1
+          TabOrder = 2
           OnClick = btnDivisaoClick
         end
         object btnMultiplicacao: TButton
           Left = 4
-          Height = 52
-          Top = 54
+          Height = 44
+          Top = 91
           Width = 128
-          Align = alTop
-          Anchors = []
+          Align = alBottom
           BorderSpacing.Left = 2
           BorderSpacing.Right = 2
           Caption = 'x'
@@ -554,15 +572,15 @@ object fView: TfView
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
           ParentFont = False
-          TabOrder = 2
+          TabOrder = 3
           OnClick = btnMultiplicacaoClick
         end
         object btnSubtracao: TButton
           Left = 4
-          Height = 52
-          Top = 106
+          Height = 44
+          Top = 135
           Width = 128
-          Align = alTop
+          Align = alBottom
           BorderSpacing.Left = 2
           BorderSpacing.Right = 2
           Caption = '-'
@@ -573,15 +591,15 @@ object fView: TfView
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
           ParentFont = False
-          TabOrder = 3
+          TabOrder = 4
           OnClick = btnSubtracaoClick
         end
         object btnSoma: TButton
           Left = 4
-          Height = 52
-          Top = 158
+          Height = 44
+          Top = 179
           Width = 128
-          Align = alTop
+          Align = alBottom
           BorderSpacing.Left = 2
           BorderSpacing.Right = 2
           Caption = '+'
@@ -592,16 +610,15 @@ object fView: TfView
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
           ParentFont = False
-          TabOrder = 4
+          TabOrder = 5
           OnClick = btnSomaClick
         end
         object btnIgual: TButton
           Left = 4
-          Height = 52
-          Top = 210
+          Height = 44
+          Top = 223
           Width = 128
-          Align = alTop
-          Anchors = []
+          Align = alBottom
           BorderSpacing.Left = 2
           BorderSpacing.Right = 2
           Caption = '='
@@ -612,7 +629,7 @@ object fView: TfView
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
           ParentFont = False
-          TabOrder = 5
+          TabOrder = 6
           OnClick = btnIgualClick
         end
       end
