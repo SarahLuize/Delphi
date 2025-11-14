@@ -1,10 +1,11 @@
 # Aprendendo DELPHI
 
-Exercícios do curso de **Prof. André Nobre** no Youtube, usando a IDE Lazarus.
+Exercícios de Object Pascal usando a IDE Lazarus.
 
 ## Estrutura do repositório
 📁 `Exercicio-1-Calculadora` 
-* 🔗[Primeiro exercício (aula 3 do curso)](https://www.youtube.com/watch?v=kTtKkEjlnNk&list=PLcz5abtuMBtP22AW3gllUu89fzGlPkL2W&index=3)
+* 🔗[Layout utilizado](https://www.youtube.com/watch?v=kTtKkEjlnNk&list=PLcz5abtuMBtP22AW3gllUu89fzGlPkL2W&index=3)
+* 🔗[Código utilizado](https://www.youtube.com/watch?v=BKnx9ruaFH8)
 * 📝 – Primeiro exercício: criação de uma calculadora simples em Lazarus.  
 * ⏳ Projeto em andamento.
 
