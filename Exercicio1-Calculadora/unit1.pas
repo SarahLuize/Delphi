@@ -69,7 +69,7 @@ type
     procedure pnFundoClick(Sender: TObject);
     procedure pnLinha1Click(Sender: TObject);
   private
-    PrimeiroNumero, SegundoNumero, Resposta:String;
+    PrimeiroNumero, SegundoNumero, Resultado:String;
     Operador:Char;
   public
 
@@ -181,26 +181,51 @@ end;
 
 procedure TfView.btnDivisaoClick(Sender: TObject);
 begin
-
+  PrimeiroNumero := edDisplay.Text;
+  Operador := '/';
+  edDisplay.Text := '';
 end;
 
 procedure TfView.btnMultiplicacaoClick(Sender: TObject);
 begin
-
+  PrimeiroNumero := edDisplay.Text;
+  Operador := '*';
+  edDisplay.Text := '';
 end;
 
 procedure TfView.btnSubtracaoClick(Sender: TObject);
 begin
-
+  PrimeiroNumero := edDisplay.Text;
+  Operador := '-';
+  edDisplay.Text := '';
 end;
 
 procedure TfView.btnSomaClick(Sender: TObject);
 begin
-
+  PrimeiroNumero := edDisplay.Text;
+  Operador := '+';
+  edDisplay.Text := '';
 end;
 
 procedure TfView.btnIgualClick(Sender: TObject);
 begin
+  SegundoNumero := edDisplay.Text;
+
+  case (Operador) of
+  '+':
+    Resultado:= FloatToStr(StrToFloat(PrimeiroNumero) + StrToFloat(SegundoNumero));
+
+  '-':
+    Resultado:= FloatToStr(StrToFloat(PrimeiroNumero) - StrToFloat(SegundoNumero));
+
+  '*':
+    Resultado:= FloatToStr(StrToFloat(PrimeiroNumero) * StrToFloat(SegundoNumero));
+
+  '/':
+    Resultado:= FloatToStr(StrToFloat(PrimeiroNumero) / StrToFloat(SegundoNumero));
+  end;
+
+  edDisplay.Text := Resultado;
 
 end;
 

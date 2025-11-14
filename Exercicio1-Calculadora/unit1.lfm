@@ -6,6 +6,7 @@ object fView: TfView
   Caption = 'Calculadora 1.0'
   ClientHeight = 347
   ClientWidth = 396
+  LCLVersion = '4.2.0.0'
   OnCreate = FormCreate
   object pnFundo: TPanel
     Left = 0
