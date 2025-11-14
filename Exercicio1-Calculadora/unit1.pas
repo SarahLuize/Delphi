@@ -174,6 +174,9 @@ end;
 procedure TfView.btnBackspaceClick(Sender: TObject);
 begin
   edDisplay.Text := copy(edDisplay.Text, 1, length(edDisplay.Text)-1);
+  if edDisplay.Text = '' then
+     edDisplay.Text := '0';
+
 end;
 
 procedure TfView.btnDivisaoClick(Sender: TObject);
