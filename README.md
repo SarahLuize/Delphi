@@ -4,8 +4,9 @@ Exercícios de Object Pascal usando a IDE Lazarus.
 
 ## Estrutura do repositório
 📁 `Exercicio-1-Calculadora` 
-* 🔗[Layout utilizado](https://www.youtube.com/watch?v=kTtKkEjlnNk&list=PLcz5abtuMBtP22AW3gllUu89fzGlPkL2W&index=3)
-* 🔗[Código utilizado](https://www.youtube.com/watch?v=BKnx9ruaFH8)
+* 🔗[Primeiro layout utilizado](https://www.youtube.com/watch?v=kTtKkEjlnNk&list=PLcz5abtuMBtP22AW3gllUu89fzGlPkL2W&index=3)
+* 🔗[Primeiro código utilizado (sem classes)](https://www.youtube.com/watch?v=BKnx9ruaFH8)
+* 🔗[Segundo código utilizado (com classes)](https://www.youtube.com/watch?v=UabMhxIV9_4&list=PLcz5abtuMBtP22AW3gllUu89fzGlPkL2W&index=5)
 * 📝 – Primeiro exercício: criação de uma calculadora simples em Lazarus.  
 * ⏳ Projeto em andamento.
 
