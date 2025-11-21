@@ -43,8 +43,8 @@ O **formulário** e o **projeto** no Lazarus (ou Delphi) são compostos por mais
   - `ALT + SHIFT + F11` → Opções do projeto  
   - `F12` → Alternar entre código e tela visual
   - `type` é onde cria as classes 
-- Progresso no vídeo: **xx:xx**  
-- Última edição do projeto: *09/11/2025 – 16:24*
+- Progresso no vídeo: **12:53**  
+- Última edição do projeto: *21/11/2025 – 18:43*
 
 ---
 
