@@ -3,21 +3,23 @@
 Exercícios de Object Pascal usando a IDE Lazarus.
 
 ## Estrutura do repositório
-📁 `Exercicio-1-Calculadora` 
-* 🔗[Primeiro layout utilizado](https://www.youtube.com/watch?v=kTtKkEjlnNk&list=PLcz5abtuMBtP22AW3gllUu89fzGlPkL2W&index=3)
-* 🔗[Primeiro código utilizado (sem classes)](https://www.youtube.com/watch?v=BKnx9ruaFH8)
-* 🔗[Segundo código utilizado (com classes)](https://www.youtube.com/watch?v=UabMhxIV9_4&list=PLcz5abtuMBtP22AW3gllUu89fzGlPkL2W&index=5)
-* 📝 – Primeiro exercício: criação de uma calculadora simples em Lazarus.  
-* ⏳ Projeto em andamento.
+📁 `Exercicio-1-Calculadora`
+- 📝 – Primeiro exercício: criação de uma calculadora simples em Lazarus.  
+- ⏳ Projeto em andamento.
 
-**Progresso:**  
-✅ Interface da calculadora criada  
-✅ Eventos nomeados e componentes ajustados na ordem certa  
-✅ Programar os botões numéricos e operadores (+, −, ×, ÷)  
-✅ Fazer o cálculo e exibir o resultado no display  
-🔜 Refazer código do Tutorial 2 para usar classes (como no Tutorial 1)  
-🔜 Melhorar layout  
-🔜 Adicionar botão decimal  
+## Referências utilizadas
+- 🔗[Primeiro layout utilizado](https://www.youtube.com/watch?v=kTtKkEjlnNk&list=PLcz5abtuMBtP22AW3gllUu89fzGlPkL2W&index=3)
+- 🔗[Primeiro código utilizado (sem classes) e segundo layout utilizado](https://www.youtube.com/watch?v=BKnx9ruaFH8)
+* 🔗[Segundo código utilizado (com classes)](https://www.youtube.com/watch?v=UabMhxIV9_4&list=PLcz5abtuMBtP22AW3gllUu89fzGlPkL2W&index=5)
+
+## Progresso
+- ✅ Interface melhorada  
+- ✅ Cálculo implementado com exibição do resultado e histórico no display
+- ✅ Adicionados novos botões: porcentagem (ainda sem funcionalidade), CE, troca de sinal (+/−) e decimal
+
+## A fazer
+- 🔜 Refazer código do Tutorial 2 para usar classes (como no Tutorial 1)  
+- 🔜 Limpar o display após exibir o resultado, para que um novo número digitado não concatene com o resultado anterior
 
 *(novos exercícios serão adicionados em pastas separadas)*
 
@@ -44,7 +46,7 @@ O **formulário** e o **projeto** no Lazarus (ou Delphi) são compostos por mais
   - `F12` → Alternar entre código e tela visual
   - `type` é onde cria as classes 
 - Progresso no vídeo: **12:53**  
-- Última edição do projeto: *21/11/2025 – 18:43*
+- Última edição do projeto: *01/01/2026 – 21:43*
 
 ---
 
