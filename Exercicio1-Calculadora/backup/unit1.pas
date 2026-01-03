@@ -64,6 +64,8 @@ type
   private
     PrimeiroNumero, SegundoNumero, Resultado: string;
     Operador: char;
+    LimparDisplay: boolean;
+    procedure AdicionarDigito(Digito: string);
   public
 
   end;
@@ -72,6 +74,39 @@ var
   fView: TfView;
 
 implementation
+
+procedure TfView.AdicionarDigito(Digito: string);
+begin
+
+  if LimparDisplay or (edDisplay.Text = '0') then
+  begin
+    // Se começou novo cálculo após clicar em =, limpa o histórico e a memória
+    if LimparDisplay and (Operador = #0) then
+    begin
+      edHistorico.Text := '';
+      PrimeiroNumero := '';
+    end;
+
+    edDisplay.Text := Digito;
+    LimparDisplay := False;
+  end
+  else
+  begin
+    // Adiciona o dígito ao que já existe
+    edDisplay.Text := edDisplay.Text + Digito;
+  end;
+
+  // Se houver um operador, o histórico mostra: (PrimeiroNumero) (Operador) (NúmeroAtual)
+  if Operador <> #0 then
+  begin
+    edHistorico.Text := PrimeiroNumero + ' ' + Operador + ' ' + edDisplay.Text;
+  end
+  else
+  begin
+    // Se ainda não tem operador o histórico mostra o primeiro número digitado/clicado
+    edHistorico.Text := edDisplay.Text;
+  end;
+end;
 
 {$R *.lfm}
 
@@ -87,85 +122,58 @@ begin
   Operador := #0; // inicializar o operador em null
   PrimeiroNumero := '';
   SegundoNumero := '';
+  LimparDisplay := False;
 end;
 
-// Função auxiliar para adicionar dígito ao display
+//Botões numéricos
 procedure TfView.btn0Click(Sender: TObject);
 begin
-  if edDisplay.Text <> '0' then
-    edDisplay.Text := edDisplay.Text + '0';
+  AdicionarDigito('0');
 end;
 
 procedure TfView.btn1Click(Sender: TObject);
 begin
-  if edDisplay.Text = '0' then
-    edDisplay.Text := '1'
-  else
-    edDisplay.Text := edDisplay.Text + '1';
+  AdicionarDigito('1');
 end;
 
 procedure TfView.btn2Click(Sender: TObject);
 begin
-  if edDisplay.Text = '0' then
-    edDisplay.Text := '2'
-  else
-    edDisplay.Text := edDisplay.Text + '2';
+  AdicionarDigito('2');
 end;
 
 procedure TfView.btn3Click(Sender: TObject);
 begin
-  if edDisplay.Text = '0' then
-    edDisplay.Text := '3'
-  else
-    edDisplay.Text := edDisplay.Text + '3';
+  AdicionarDigito('3');
 end;
 
 procedure TfView.btn4Click(Sender: TObject);
 begin
-  if edDisplay.Text = '0' then
-    edDisplay.Text := '4'
-  else
-    edDisplay.Text := edDisplay.Text + '4';
+  AdicionarDigito('4');
 end;
 
 procedure TfView.btn5Click(Sender: TObject);
 begin
-  if edDisplay.Text = '0' then
-    edDisplay.Text := '5'
-  else
-    edDisplay.Text := edDisplay.Text + '5';
+  AdicionarDigito('5');
 end;
 
 procedure TfView.btn6Click(Sender: TObject);
 begin
-  if edDisplay.Text = '0' then
-    edDisplay.Text := '6'
-  else
-    edDisplay.Text := edDisplay.Text + '6';
+  AdicionarDigito('6');
 end;
 
 procedure TfView.btn7Click(Sender: TObject);
 begin
-  if edDisplay.Text = '0' then
-    edDisplay.Text := '7'
-  else
-    edDisplay.Text := edDisplay.Text + '7';
+  AdicionarDigito('7');
 end;
 
 procedure TfView.btn8Click(Sender: TObject);
 begin
-  if edDisplay.Text = '0' then
-    edDisplay.Text := '8'
-  else
-    edDisplay.Text := edDisplay.Text + '8';
+  AdicionarDigito('8');
 end;
 
 procedure TfView.btn9Click(Sender: TObject);
 begin
-  if edDisplay.Text = '0' then
-    edDisplay.Text := '9'
-  else
-    edDisplay.Text := edDisplay.Text + '9';
+  AdicionarDigito('9');
 end;
 
 procedure TfView.btnBackspaceClick(Sender: TObject);
@@ -197,8 +205,9 @@ begin
   PrimeiroNumero := edDisplay.Text;
   Operador := '/';
   SegundoNumero := '';
-  edHistorico.Text := PrimeiroNumero + ' /';
+  edHistorico.Text := PrimeiroNumero + operador;
   edDisplay.Text := '0';
+  LimparDisplay:= true;
 end;
 
 procedure TfView.btnMultiplicacaoClick(Sender: TObject);
@@ -206,8 +215,9 @@ begin
   PrimeiroNumero := edDisplay.Text;
   Operador := '*';
   SegundoNumero := '';
-  edHistorico.Text := PrimeiroNumero + ' *';
+  edHistorico.Text := PrimeiroNumero + operador;
   edDisplay.Text := '0';
+  LimparDisplay:= true;
 end;
 
 procedure TfView.btnPorcentagemClick(Sender: TObject);
@@ -218,11 +228,12 @@ begin
 
   Valor := StrToFloat(edDisplay.Text) / 100;
   edDisplay.Text := FloatToStr(Valor);
+  LimparDisplay := True;
 end;
 
 procedure TfView.btnSinalClick(Sender: TObject);
 var
-  sinal: real;
+  sinal: double;
 begin
   if edDisplay.Text = '' then Exit;
 
@@ -239,8 +250,8 @@ begin
   PrimeiroNumero := edDisplay.Text;
   Operador := '-';
   SegundoNumero := '';
-  edHistorico.Text := PrimeiroNumero + ' -';
-  edDisplay.Text := '0';
+  edHistorico.Text := PrimeiroNumero + operador;
+  LimparDisplay:= true;
 end;
 
 procedure TfView.btnSomaClick(Sender: TObject);
@@ -248,8 +259,8 @@ begin
   PrimeiroNumero := edDisplay.Text;
   Operador := '+';
   SegundoNumero := '';
-  edHistorico.Text := PrimeiroNumero + ' +';
-  edDisplay.Text := '0';
+  edHistorico.Text := PrimeiroNumero + operador;
+  LimparDisplay:= true;
 end;
 
 procedure TfView.btnIgualClick(Sender: TObject);
@@ -271,6 +282,9 @@ begin
   end;
 
   edDisplay.Text := Resultado;
+  edHistorico.Text := PrimeiroNumero + ' ' + Operador + ' ' + SegundoNumero;
+  Operador := #0;
+  LimparDisplay := True; //próximo número substitui o resultado
 
 end;
 
@@ -278,6 +292,7 @@ procedure TfView.btnLimparClick(Sender: TObject);
 begin
   edDisplay.Text := '0';
   edHistorico.Text := '';
+  operador := #0;
 end;
 
 end.
