@@ -16,10 +16,10 @@ Exercícios de Object Pascal usando a IDE Lazarus.
 - ✅ Interface melhorada  
 - ✅ Cálculo implementado com exibição do resultado e histórico no display
 - ✅ Adicionados novos botões: porcentagem (ainda sem funcionalidade), CE, troca de sinal (+/−) e decimal
+- ✅ Corrigido concatenação de valores nos displays : agora o display e o histórico reiniciam corretamente após cada cálculo, evitando erros de concatenação
 
 ## A fazer
 - 🔜 Refazer código do Tutorial 2 para usar classes (como no Tutorial 1)  
-- 🔜 Limpar o display após exibir o resultado, para que um novo número digitado não concatene com o resultado anterior
 
 *(novos exercícios serão adicionados em pastas separadas)*
 
