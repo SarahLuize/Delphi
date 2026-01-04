@@ -11,14 +11,18 @@ Exercícios de Object Pascal usando a IDE Lazarus.
 - 🔗[Primeiro código utilizado (sem classes) e atual layout utilizado](https://www.youtube.com/watch?v=BKnx9ruaFH8)
 - 🔗[Segundo código utilizado (com classes)](https://www.youtube.com/watch?v=UabMhxIV9_4&list=PLcz5abtuMBtP22AW3gllUu89fzGlPkL2W&index=5)
 
-## Progresso
-- ✅ Interface melhorada  
-- ✅ Cálculo implementado com exibição do resultado e histórico no display
-- ✅ Adicionados novos botões: porcentagem, CE (Clear Entry), troca de sinal (+/−) e decimal
-- ✅ Corrigido concatenação de valores nos displays : agora o display e o histórico reiniciam corretamente após cada cálculo, evitando erros de concatenação
-
+## Funcionalidades
+- **Operações:** Números (0-9), soma, subtração, multiplicação, divisão e igual.
+- **Edição:** Backspace (apagar último dígito), +/- (troca sinal), vírgula decimal.
+- **Limpeza:** C (limpa tudo) e CE (limpa apenas o visor atual).
+- **Visores:** Display de resultado e display de histórico de operações.
+ 
 ## A fazer
 - 🔜 Refazer código do Tutorial 2 para usar classes (como no Tutorial 1)  
+
+## Screenshots
+
+<img width="507" height="525" alt="calculadora" src="https://github.com/user-attachments/assets/966a96f8-8102-4dbc-a724-25c491bc8fec" />
 
 *(novos exercícios serão adicionados em pastas separadas)*
 
